@@ -1,0 +1,964 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/accordion.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/homepage.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/output.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com/3.2.4"></script>
+
+</head>
+
+<body>
+
+    <div class="flex justify-center w-full fixed header-top z-50">
+
+        <nav class="max-width w-full top-0 left-0">
+            <div class="max-width  menu-close flex-wrap h-full w-full flex justify-between items-center">
+                <a href="#" class="flex items-center">
+                    <img class="rabiloo-logo" src="assets/img/LOGO.png" alt="Rabiloo Logo">
+                </a>
+                <div class="flex lg:order-2">
+                    <a href="#" class="button-text-m16 white">
+                        <div class="header-contact">Contact us</div>
+                    </a>
+                    <button type="button" onclick="toggleMenu()" class="items-center text-sm text-white open-container">
+                        <img class="menu-open " src="assets/img/menu-white.png" alt="">
+                    </button>
+                </div>
+                <ul id="menu" class="items-center justify-between hidden lg:flex w-auto">
+                    <li class="hidden menu-close">
+                        <a href="javascript:void(0)" class="text-right " onclick="toggleMenu()">&times;</a>
+                    </li>
+                    <li>
+                        <a class="menu-item-selected menu-item" href="https://www.example.com">Industries we
+                            service</a>
+                    </li>
+                    <li>
+                        <a class="menu-item" href="https://www.example.com">What we do</a>
+                    </li>
+                    <li>
+                        <a class="menu-item" href="https://www.example.com">Insights</a>
+                    </li>
+                    <li>
+                        <a class="menu-item" href="https://www.example.com">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+
+    </div>
+
+    <div class="cover-container w-full h-full">
+
+        <div class="header-container w-full h-full flex items-center justify-center">
+            <div class="max-width">
+                <div class="content-container h-full white flex flex-col items-center justify-center">
+                    <div class="header-title text-center">
+                        Unlock the potential of your Business with Rabiloo Technical Solution
+                    </div>
+                    <div class="header-content">
+                        We are a technology consulting and development company
+                        based in Vietnam. We have been working and thriving
+                        in Japan, Vietnam, and the global market.
+                    </div>
+                    <div class="header-trusted flex flex-col content-between justify-center">
+                        <div class="trusted text-center">Trusted by</div>
+                        <div class="trusted-logo flex flex-row justify-between items-center">
+                            <a href="#" class="trusted-logo-top">
+                                <svg width="100%" height="100%" viewBox="0 0 35 38" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M32.3446 15.7624L17.475 24.3297L1.6574 15.2014L0.908936 15.6093V22.2389L17.475 31.8264L32.3446 23.2589V26.7776L17.475 35.3451L1.6574 26.2166L0.908936 26.6247V27.7466L17.475 37.3339L34.0911 27.7466V21.1169L33.3426 20.7089L17.475 29.8374L2.65532 21.2699V17.8022L17.475 26.3187L34.0911 16.7312V10.2036L33.2428 9.74467L17.475 18.8221L3.45364 10.7136L17.475 2.6561L29.0513 9.2857L30.0993 8.72472V7.90877L17.475 0.667236L0.908936 10.2036V11.2236L17.475 20.8109L32.3446 12.2435V15.7624Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+
+                            <a href="#" class="trusted-logo-top">
+                                <svg width="100%" height="100%" viewBox="0 0 35 38" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M32.3446 15.7624L17.475 24.3297L1.6574 15.2014L0.908936 15.6093V22.2389L17.475 31.8264L32.3446 23.2589V26.7776L17.475 35.3451L1.6574 26.2166L0.908936 26.6247V27.7466L17.475 37.3339L34.0911 27.7466V21.1169L33.3426 20.7089L17.475 29.8374L2.65532 21.2699V17.8022L17.475 26.3187L34.0911 16.7312V10.2036L33.2428 9.74467L17.475 18.8221L3.45364 10.7136L17.475 2.6561L29.0513 9.2857L30.0993 8.72472V7.90877L17.475 0.667236L0.908936 10.2036V11.2236L17.475 20.8109L32.3446 12.2435V15.7624Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <a href="#" class="trusted-logo-top">
+                                <svg width="100%" height="100%" viewBox="0 0 35 38" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M32.3446 15.7624L17.475 24.3297L1.6574 15.2014L0.908936 15.6093V22.2389L17.475 31.8264L32.3446 23.2589V26.7776L17.475 35.3451L1.6574 26.2166L0.908936 26.6247V27.7466L17.475 37.3339L34.0911 27.7466V21.1169L33.3426 20.7089L17.475 29.8374L2.65532 21.2699V17.8022L17.475 26.3187L34.0911 16.7312V10.2036L33.2428 9.74467L17.475 18.8221L3.45364 10.7136L17.475 2.6561L29.0513 9.2857L30.0993 8.72472V7.90877L17.475 0.667236L0.908936 10.2036V11.2236L17.475 20.8109L32.3446 12.2435V15.7624Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <a href="#" class="trusted-logo-top">
+                                <svg width="100%" height="100%" viewBox="0 0 35 38" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M32.3446 15.7624L17.475 24.3297L1.6574 15.2014L0.908936 15.6093V22.2389L17.475 31.8264L32.3446 23.2589V26.7776L17.475 35.3451L1.6574 26.2166L0.908936 26.6247V27.7466L17.475 37.3339L34.0911 27.7466V21.1169L33.3426 20.7089L17.475 29.8374L2.65532 21.2699V17.8022L17.475 26.3187L34.0911 16.7312V10.2036L33.2428 9.74467L17.475 18.8221L3.45364 10.7136L17.475 2.6561L29.0513 9.2857L30.0993 8.72472V7.90877L17.475 0.667236L0.908936 10.2036V11.2236L17.475 20.8109L32.3446 12.2435V15.7624Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <a href="#" class="trusted-logo-top">
+                                <svg width="100%" height="100%" viewBox="0 0 35 38" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M32.3446 15.7624L17.475 24.3297L1.6574 15.2014L0.908936 15.6093V22.2389L17.475 31.8264L32.3446 23.2589V26.7776L17.475 35.3451L1.6574 26.2166L0.908936 26.6247V27.7466L17.475 37.3339L34.0911 27.7466V21.1169L33.3426 20.7089L17.475 29.8374L2.65532 21.2699V17.8022L17.475 26.3187L34.0911 16.7312V10.2036L33.2428 9.74467L17.475 18.8221L3.45364 10.7136L17.475 2.6561L29.0513 9.2857L30.0993 8.72472V7.90877L17.475 0.667236L0.908936 10.2036V11.2236L17.475 20.8109L32.3446 12.2435V15.7624Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <a href="#" class="trusted-logo-top">
+                                <svg width="100%" height="100%" viewBox="0 0 35 38" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M32.3446 15.7624L17.475 24.3297L1.6574 15.2014L0.908936 15.6093V22.2389L17.475 31.8264L32.3446 23.2589V26.7776L17.475 35.3451L1.6574 26.2166L0.908936 26.6247V27.7466L17.475 37.3339L34.0911 27.7466V21.1169L33.3426 20.7089L17.475 29.8374L2.65532 21.2699V17.8022L17.475 26.3187L34.0911 16.7312V10.2036L33.2428 9.74467L17.475 18.8221L3.45364 10.7136L17.475 2.6561L29.0513 9.2857L30.0993 8.72472V7.90877L17.475 0.667236L0.908936 10.2036V11.2236L17.475 20.8109L32.3446 12.2435V15.7624Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="content-container w-full">
+
+        <div
+            class="max-width content-box flex flex-row flex-wrap w-full items-center justify-start lg:justify-center gap-12">
+            <div class="content-box-left brand-1 number-1">
+                <span>Over </span> <span class="brand-2"><span class="value"> 6 </span> Years </span>
+                <span>Of Tech Expertise,</span>
+                <div>We Are Confident In</div>
+            </div>
+            <div class="content-box-right flex flex-wrap justify-between">
+                <div class="content-box-center flex items-center justify-center">
+                    <div class="flex flex-col items-center justify-center">
+                        <div style="padding:16px">
+                            <svg width="30" height="27" viewBox="0 0 30 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.333252 1.66659C0.333252 0.930206 0.930206 0.333252 1.66659 0.333252H28.3333C29.0696 0.333252 29.6666 0.930206 29.6666 1.66659C29.6666 2.40296 29.0696 2.99992 28.3333 2.99992H27.6666V20.3333C27.6666 21.0696 27.0696 21.6666 26.3333 21.6666H18.2189L21.2761 24.7238C21.7968 25.2445 21.7968 26.0887 21.2761 26.6094C20.7554 27.1301 19.9111 27.1301 19.3904 26.6094L14.9999 22.2189L10.6094 26.6094C10.0887 27.1301 9.24447 27.1301 8.72378 26.6094C8.20308 26.0887 8.20308 25.2445 8.72378 24.7238L11.781 21.6666H3.66658C2.93021 21.6666 2.33325 21.0696 2.33325 20.3333V2.99992H1.66659C0.930206 2.99992 0.333252 2.40296 0.333252 1.66659ZM4.99992 2.99992V18.9999H24.9999V2.99992H4.99992ZM22.5864 6.07005C23.1076 6.59021 23.1085 7.43443 22.5883 7.95567L15.9493 14.6084C15.4328 15.126 14.5958 15.131 14.0731 14.6198L12.0432 12.6342L9.21387 15.396C8.68692 15.9103 7.84276 15.9001 7.32839 15.3732C6.81402 14.8462 6.82422 14.0021 7.35118 13.4877L11.1128 9.81588C11.6312 9.30991 12.4587 9.31033 12.9765 9.81684L14.9941 11.7904L20.7007 6.072C21.2209 5.55076 22.0651 5.54989 22.5864 6.07005Z"
+                                    fill="#003BBA" />
+                            </svg>
+                        </div>
+
+                        <div>
+                            content
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box-center flex items-center justify-center">
+                    <div class="flex flex-col items-center justify-center">
+                        <div style="padding:16px">
+                            <svg width="30" height="27" viewBox="0 0 30 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.333252 1.66659C0.333252 0.930206 0.930206 0.333252 1.66659 0.333252H28.3333C29.0696 0.333252 29.6666 0.930206 29.6666 1.66659C29.6666 2.40296 29.0696 2.99992 28.3333 2.99992H27.6666V20.3333C27.6666 21.0696 27.0696 21.6666 26.3333 21.6666H18.2189L21.2761 24.7238C21.7968 25.2445 21.7968 26.0887 21.2761 26.6094C20.7554 27.1301 19.9111 27.1301 19.3904 26.6094L14.9999 22.2189L10.6094 26.6094C10.0887 27.1301 9.24447 27.1301 8.72378 26.6094C8.20308 26.0887 8.20308 25.2445 8.72378 24.7238L11.781 21.6666H3.66658C2.93021 21.6666 2.33325 21.0696 2.33325 20.3333V2.99992H1.66659C0.930206 2.99992 0.333252 2.40296 0.333252 1.66659ZM4.99992 2.99992V18.9999H24.9999V2.99992H4.99992ZM22.5864 6.07005C23.1076 6.59021 23.1085 7.43443 22.5883 7.95567L15.9493 14.6084C15.4328 15.126 14.5958 15.131 14.0731 14.6198L12.0432 12.6342L9.21387 15.396C8.68692 15.9103 7.84276 15.9001 7.32839 15.3732C6.81402 14.8462 6.82422 14.0021 7.35118 13.4877L11.1128 9.81588C11.6312 9.30991 12.4587 9.31033 12.9765 9.81684L14.9941 11.7904L20.7007 6.072C21.2209 5.55076 22.0651 5.54989 22.5864 6.07005Z"
+                                    fill="#003BBA" />
+                            </svg>
+                        </div>
+
+
+                        <div>
+                            content
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box-center flex items-center justify-center">
+                    <div class="flex flex-col items-center justify-center">
+                        <div style="padding:16px">
+                            <svg width="30" height="27" viewBox="0 0 30 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.333252 1.66659C0.333252 0.930206 0.930206 0.333252 1.66659 0.333252H28.3333C29.0696 0.333252 29.6666 0.930206 29.6666 1.66659C29.6666 2.40296 29.0696 2.99992 28.3333 2.99992H27.6666V20.3333C27.6666 21.0696 27.0696 21.6666 26.3333 21.6666H18.2189L21.2761 24.7238C21.7968 25.2445 21.7968 26.0887 21.2761 26.6094C20.7554 27.1301 19.9111 27.1301 19.3904 26.6094L14.9999 22.2189L10.6094 26.6094C10.0887 27.1301 9.24447 27.1301 8.72378 26.6094C8.20308 26.0887 8.20308 25.2445 8.72378 24.7238L11.781 21.6666H3.66658C2.93021 21.6666 2.33325 21.0696 2.33325 20.3333V2.99992H1.66659C0.930206 2.99992 0.333252 2.40296 0.333252 1.66659ZM4.99992 2.99992V18.9999H24.9999V2.99992H4.99992ZM22.5864 6.07005C23.1076 6.59021 23.1085 7.43443 22.5883 7.95567L15.9493 14.6084C15.4328 15.126 14.5958 15.131 14.0731 14.6198L12.0432 12.6342L9.21387 15.396C8.68692 15.9103 7.84276 15.9001 7.32839 15.3732C6.81402 14.8462 6.82422 14.0021 7.35118 13.4877L11.1128 9.81588C11.6312 9.30991 12.4587 9.31033 12.9765 9.81684L14.9941 11.7904L20.7007 6.072C21.2209 5.55076 22.0651 5.54989 22.5864 6.07005Z"
+                                    fill="#003BBA" />
+                            </svg>
+                        </div>
+
+                        <div>
+                            content
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box-center flex items-center justify-center">
+                    <div class="flex flex-col items-center justify-center">
+                        <div style="padding:16px">
+                            <svg width="30" height="27" viewBox="0 0 30 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.333252 1.66659C0.333252 0.930206 0.930206 0.333252 1.66659 0.333252H28.3333C29.0696 0.333252 29.6666 0.930206 29.6666 1.66659C29.6666 2.40296 29.0696 2.99992 28.3333 2.99992H27.6666V20.3333C27.6666 21.0696 27.0696 21.6666 26.3333 21.6666H18.2189L21.2761 24.7238C21.7968 25.2445 21.7968 26.0887 21.2761 26.6094C20.7554 27.1301 19.9111 27.1301 19.3904 26.6094L14.9999 22.2189L10.6094 26.6094C10.0887 27.1301 9.24447 27.1301 8.72378 26.6094C8.20308 26.0887 8.20308 25.2445 8.72378 24.7238L11.781 21.6666H3.66658C2.93021 21.6666 2.33325 21.0696 2.33325 20.3333V2.99992H1.66659C0.930206 2.99992 0.333252 2.40296 0.333252 1.66659ZM4.99992 2.99992V18.9999H24.9999V2.99992H4.99992ZM22.5864 6.07005C23.1076 6.59021 23.1085 7.43443 22.5883 7.95567L15.9493 14.6084C15.4328 15.126 14.5958 15.131 14.0731 14.6198L12.0432 12.6342L9.21387 15.396C8.68692 15.9103 7.84276 15.9001 7.32839 15.3732C6.81402 14.8462 6.82422 14.0021 7.35118 13.4877L11.1128 9.81588C11.6312 9.30991 12.4587 9.31033 12.9765 9.81684L14.9941 11.7904L20.7007 6.072C21.2209 5.55076 22.0651 5.54989 22.5864 6.07005Z"
+                                    fill="#003BBA" />
+                            </svg>
+                        </div>
+
+                        <div>
+                            content
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="content-container content-bg">
+        <div class="content-filter w-full flex justify-center items-center">
+
+            <div class="max-width-1 content-center h-full flex justify-center">
+                <div class="content-box-1 w-full h-full flex flex-col items-center">
+                    <div class="content-center-top number-2 text-center">
+                        Moving from vision to reality as our <span class="brand-2"> +</span><span
+                            class="value brand-2">50</span><span class="brand-2"> partners</span>
+                    </div>
+                    <div
+                        class="content-center-bottom w-fit lg:w-full flex flex-col lg:flex-row flex-wrap justify-center lg:justify-between lg:items-start bottom-0">
+                        <ul class="cct-left flex flex-col justify-center items-center" id="selectList">
+                            <li class="select-box select-box-selected " value="retail">Retail</li>
+                            <li class="select-box" value="healthcare">Healthcare</li>
+                            <li class="select-box " value="education">Education</li>
+                        </ul>
+                        <div class="cct-center w-fit  flex flex-col white text-center justify-center items-center">
+                            <div class="cct-center-top">Solution in business</div>
+                            <div class="cct-center-bottom">Use our packaged solutions or customized them to suit
+                                your requirements.</div>
+                        </div>
+                        <div class="cct-right flex flex-col items-center justify-center">
+                            <div class="cct-right-top white flex flex-col justify-center items-center text-center">
+                                <div class="cct-box"><a href="#">Loyalty Program</a></div>
+                                <div class="cct-box"><a href="#">POS Data</a></div>
+                                <div class="cct-box"><a href="#">Booking</a></div>
+                                <div class="cct-box"><a href="#">Ecommerce Website</a></div>
+                            </div>
+                            <a href="#">
+                                <div
+                                    class="cct-right-bottom w-fit button-v1 white flex flex-col justify-center items-center">
+                                    Get your own
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="content-container flex justify-center items-center ">
+        <div class="content-box flex flex-col w-full max-width">
+            <div class="number-3 content-title">
+                With <span class="brand-2"> +</span><span class="value brand-2">150 </span> <span class="brand-2">
+                    Successfull</span> Projects
+            </div>
+            <div class="flex flex-row flex-wrap justify-between items-center w-full gap-y-8">
+                <div class="card">
+                    <img class="card-img" src="/assets/img/Rectangle2870.png" alt="">
+                    <div class="card-title">
+                        (Case studies)
+                    </div>
+                    <div class="card-content">
+                        The first quarter of 2022 has come to an end. The planning of using the budget for the new.
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="/assets/img/Rectangle2870.png" alt="">
+                    <div class="card-title">
+                        (Case studies)
+                    </div>
+                    <div class="card-content">
+                        The first quarter of 2022 has come to an end. The planning of using the budget for the new.
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="/assets/img/Rectangle2870.png" alt="">
+                    <div class="card-title">
+                        (Case studies)
+                    </div>
+                    <div class="card-content">
+                        The first quarter of 2022 has come to an end. The planning of using the budget for the new.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="content-container w-full flex flex-row justify-center items-center relative">
+        <div class="filter-content max-width-2 w-full flex">
+            <div
+                class="content-box-2 w-full bg-content flex lg:flex-row flex-col flex-wrap flex-start lg:justify-between lg:items-center gap-8">
+                <div class="title-content text-left w-full max-width-3">
+                    <div class="tc-title brand-1">Our advisors from <span class="brand-2">Top 1</span> universites of
+                        technology</div>
+                    <div class="tc-content black-1">Our tech advisors are faculty members from a leading technology
+                        university</div>
+                </div>
+
+                <div id="carouselExampleIndicators" class="carousel slide w-1/2" data-bs-ride="true">
+
+                    <div class="carousel-inner w-full">
+                        <div class="carousel-item active">
+                            <img src="/assets/img/Rectangle2890.png" class="d-block carousel-img"
+                                alt="/assets/img/Rectangle2890.png">
+                            <div class="carousel-caption d-none d-md-block text-left">
+                                <h5>PGS. TS. Nguyễn Bình Minh</h5>
+                                <p>Giảng viên đại học Bách Khoa</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/img/Rectangle2890.png" class="d-block carousel-img"
+                                alt="/assets/img/Rectangle2890.png">
+                            <div class="carousel-caption d-none d-md-block text-left">
+                                <h5>PGS. TS. Nguyễn Bình Minh</h5>
+                                <p>Giảng viên đại học Bách Khoa</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/img/Rectangle2890.png" class="d-block carousel-img" alt="...">
+                            <div class="carousel-caption d-none d-md-block text-left">
+                                <h5>PGS. TS. Nguyễn Bình Minh</h5>
+                                <p>Giảng viên đại học Bách Khoa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" style="width: 10px; height: 10px; border-radius: 50%; "
+                            data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active indicator"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" style="width: 10px; height: 10px; border-radius: 50%; " class="indicator"
+                            data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" style="width: 10px; height: 10px; border-radius: 50%; " class="indicator"
+                            data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="content-container flex justify-center items-center relative">
+        <div class="max-width w-full content-box flex flex-col justify-center items-center">
+            <div class="w-full">
+                <div class="number-3 content-title text-left">
+                    Lastest from blog
+                </div>
+            </div>
+
+            <div class="flex flex-row flex-wrap justify-between items-center w-full gap-y-8">
+                <div class="card">
+                    <img class="card-img" src="/assets/img/Rectangle2870.png" alt="">
+                    <div class="card-title">
+                        3 reasons to use Offshore development services right now
+                    </div>
+                    <div class="card-content">
+                        The first quarter of 2022 has come to an end. The planning of using the budget for the new year
+                        is already
+                    </div>
+                    <a href="#" class="brand-1 read-more button-text-m16 ">Read more</a>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="/assets/img/Rectangle2870.png" alt="">
+                    <div class="card-title">
+                        3 reasons to use Offshore development services right now
+                    </div>
+                    <div class="card-content">
+                        The first quarter of 2022 has come to an end. The planning of using the budget for the new year
+                        is already
+                    </div>
+                    <a href="#" class="brand-1 read-more button-text-m16">Read more</a>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="/assets/img/Rectangle2870.png" alt="">
+                    <div class="card-title">
+                        3 reasons to use Offshore development services right now
+                    </div>
+                    <div class="card-content">
+                        The first quarter of 2022 has come to an end. The planning of using the budget for the new year
+                        is already
+                    </div>
+                    <a href="#" class="brand-1 read-more button-text-m16">Read more</a>
+                </div>
+
+            </div>
+            <div class="w-full flex justify-start lg:justify-center">
+                <a href="#" class="button-see-all">
+                    <div>See all</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-container flex justify-center relative">
+        <div class="flex flex-col max-width w-full" style="padding: 0 0 96px">
+            <div class="number-3 content-title">
+                Awards & Recognitions
+            </div>
+
+            <div class="cerf-container flex flex-wrap">
+                <div class="certificate flex justify-center ">
+                    <div class="cerf-bg">
+
+                    </div>
+                    <img class="cerf" src="/assets/img/iso9001.png">
+                </div>
+                <div class="certificate flex justify-center">
+                    <div class="cerf-bg">
+                    </div>
+                    <img class="cerf" src="/assets/img/iso27001.png">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="form flex flex-row flex-wrap justify-center items-center">
+        <div class="wrapper max-width flex flex-row flex-wrap justify-between items-center">
+            <div class="statuses">
+                <div class="number-3 content-title">
+                    What our Partners say?
+                </div>
+                <div class="flex flex-col" style="gap:46px">
+                    <div class="status flex flex-col gap-3">
+                        <div class="info flex flex-row gap-4 items-center">
+                            <img src="/assets/img/avatar-1.png" alt="avatar-1" class="avatar">
+                            <div class="name-info grid content-between">
+                                <div class="name">Tran Trung Kien</div>
+                                <div class="position">CEO</div>
+                            </div>
+                        </div>
+                        <div class="quote">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        </div>
+                    </div>
+                    <div class="status flex flex-col gap-3">
+                        <div class="info flex flex-row gap-4 items-center">
+                            <img src="/assets/img/avatar-1.png" alt="avatar-1" class="avatar">
+                            <div class="name-info grid content-between">
+                                <div class="name">Tran Trung Kien</div>
+                                <div class="position">CEO</div>
+                            </div>
+                        </div>
+                        <div class="quote">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        </div>
+                    </div>
+                    <div class="status flex flex-col gap-3">
+                        <div class="info flex flex-row gap-4 items-center">
+                            <img src="/assets/img/avatar-1.png" alt="avatar-1" class="avatar">
+                            <div class="name-info grid content-between">
+                                <div class="name">Tran Trung Kien</div>
+                                <div class="position">CEO</div>
+                            </div>
+                        </div>
+                        <div class="quote">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <form class="form-input">
+                <div class="form-title w-full text-center brand-1 pb-2">
+                    Let's meet and talk
+                </div>
+                <div class="flex w-full">
+
+                    <div class="w-full">
+                        <label class="block capitalize" for="grid-full-name">
+                            full name <span style="color: #F35B5B;">*</span>
+                        </label>
+                        <input class="input w-full border focus:bg-white" id="grid-full-name" type="text"
+                            placeholder="Please input" required>
+
+                    </div>
+
+                </div>
+                <div class="flex w-full gap-3">
+                    <div class="w-1/2">
+                        <label class="block" for="grid-phone">
+                            Email <span style="color: #F35B5B;">*</span>
+                        </label>
+                        <input class="input w-full border focus:bg-white" id="grid-phone" type="text"
+                            placeholder="Please input" required>
+                    </div>
+                    <div class="w-1/2">
+                        <label class="block" for="grid-telephone">
+                            Telephone
+                        </label>
+                        <input class="input w-full border focus:bg-white" id="grid-telephone" type="text"
+                            placeholder="Please input">
+                    </div>
+                </div>
+                <div class="flex w-full">
+                    <div class="w-full">
+                        <label class="block" for="grid-company-name">
+                            Company name
+                        </label>
+                        <input class="input w-full border focus:bg-white" id="grid-company-name" type="text"
+                            placeholder="Please input">
+                    </div>
+                </div>
+
+                <div class="flex w-full">
+                    <div class="w-full">
+                        <label class="block" for="grid-country">
+                            Country
+                        </label>
+                        <input class="input w-full border focus:bg-white" id="grid-country" type="text"
+                            placeholder="Please input">
+                    </div>
+                </div>
+
+                <div class="flex w-full">
+                    <div class="w-full">
+                        <label class="block" for="grid-country">
+                            Country
+                        </label>
+                        <textarea class="textarea w-full border focus:bg-white" rows="4" id="grid-country" name="text"
+                            placeholder="Please input"></textarea>
+
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-button w-full">Submit</button>
+
+            </form>
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="footer lg:hidden flex flex-col justify-center items-center">
+
+        <div class="footer-wrapper max-width w-full footer-top">
+            <div class="footer-top-1">
+                <img src="/assets/img/logo-mini.png" alt="logo" style="padding-bottom: 38px;">
+                <div class="footer-text" style="padding-bottom: 38px;">
+                    5th Floor, Building A3, Ecolife Capitol,
+                    No. 58 To Huu Street, Me Tri Ward,
+                    Nam Tu Liem District, Hanoi, Vietnam
+                </div>
+
+                <div class="footer-text" style="padding-bottom: 28px;">
+                    (+84)90-1134-886
+                </div>
+                <div class="footer-text flex flex-row gap-2" style="padding-bottom: 30px;">
+                    <div class="">Theo dõi chúng tôi</div>
+                    <div class="footer-logos flex flex-row gap-3">
+                        <a href="" class="">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="12" fill="#D9D9D9" />
+                                <path
+                                    d="M14.722 7.32458H16V5.09858C15.7795 5.06825 15.0212 5 14.1382 5C12.2956 5 11.0333 6.15908 11.0333 8.28942V10.25H9V12.7385H11.0333V19H13.5263V12.7391H15.4774L15.7871 10.2506H13.5257V8.53617C13.5263 7.81692 13.7199 7.32458 14.722 7.32458Z"
+                                    fill="#003BBA" />
+                            </svg>
+                        </a>
+                        <a href="" class="">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="12" fill="#D9D9D9" />
+                                <path
+                                    d="M18 8.27925C17.5538 8.475 17.0782 8.60475 16.5825 8.66775C17.0925 8.36325 17.4818 7.88475 17.6648 7.308C17.1892 7.5915 16.6642 7.79175 16.1047 7.9035C15.6532 7.42275 15.0097 7.125 14.3077 7.125C12.9457 7.125 11.8492 8.2305 11.8492 9.58575C11.8492 9.78075 11.8657 9.96825 11.9062 10.1467C9.861 10.047 8.05125 9.06675 6.8355 7.5735C6.62325 7.94175 6.49875 8.36325 6.49875 8.817C6.49875 9.669 6.9375 10.4242 7.5915 10.8615C7.19625 10.854 6.8085 10.7392 6.48 10.5585C6.48 10.566 6.48 10.5757 6.48 10.5855C6.48 11.781 7.33275 12.774 8.451 13.0027C8.25075 13.0575 8.0325 13.0837 7.806 13.0837C7.6485 13.0837 7.4895 13.0747 7.34025 13.0417C7.659 14.016 8.5635 14.7322 9.639 14.7555C8.802 15.4102 7.73925 15.8048 6.58875 15.8048C6.387 15.8048 6.1935 15.7957 6 15.771C7.08975 16.4738 8.38125 16.875 9.774 16.875C14.301 16.875 16.776 13.125 16.776 9.8745C16.776 9.76575 16.7723 9.66075 16.767 9.5565C17.2552 9.21 17.6655 8.77725 18 8.27925Z"
+                                    fill="#003BBA" />
+                            </svg>
+                        </a>
+                        <a href="" class="">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="12" fill="#D9D9D9" />
+                                <path
+                                    d="M18.9971 17.5001V17.4996H19.0001V13.0986C19.0001 10.9456 18.5366 9.28711 16.0196 9.28711C14.8096 9.28711 13.9976 9.95111 13.6661 10.5806H13.6311V9.48811H11.2446V17.4996H13.7296V13.5326C13.7296 12.4881 13.9276 11.4781 15.2211 11.4781C16.4956 11.4781 16.5146 12.6701 16.5146 13.5996V17.5001H18.9971Z"
+                                    fill="#003BBA" />
+                                <path d="M7.19824 9.48853H9.68624V17.5H7.19824V9.48853Z" fill="#003BBA" />
+                                <path
+                                    d="M8.441 5.5C7.6455 5.5 7 6.1455 7 6.941C7 7.7365 7.6455 8.3955 8.441 8.3955C9.2365 8.3955 9.882 7.7365 9.882 6.941C9.8815 6.1455 9.236 5.5 8.441 5.5V5.5Z"
+                                    fill="#003BBA" />
+                            </svg>
+
+                        </a>
+                        <a href="" class="">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="12" fill="#D9D9D9" />
+                                <path
+                                    d="M18.8605 9.15773C18.8605 9.15773 18.7238 8.17745 18.3027 7.74701C17.7695 7.18051 17.1734 7.17773 16.9 7.1444C14.9422 7 12.0027 7 12.0027 7H11.9973C11.9973 7 9.05781 7 7.1 7.1444C6.82656 7.17773 6.23047 7.18051 5.69727 7.74701C5.27617 8.17745 5.14219 9.15773 5.14219 9.15773C5.14219 9.15773 5 10.3102 5 11.4599V12.5374C5 13.687 5.13945 14.8395 5.13945 14.8395C5.13945 14.8395 5.27617 15.8198 5.69453 16.2502C6.22773 16.8167 6.92773 16.7973 7.23945 16.8584C8.36055 16.9667 12 17 12 17C12 17 14.9422 16.9944 16.9 16.8528C17.1734 16.8195 17.7695 16.8167 18.3027 16.2502C18.7238 15.8198 18.8605 14.8395 18.8605 14.8395C18.8605 14.8395 19 13.6898 19 12.5374V11.4599C19 10.3102 18.8605 9.15773 18.8605 9.15773ZM10.5535 13.8453V9.84921L14.3352 11.8542L10.5535 13.8453Z"
+                                    fill="#003BBA" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="accordion-collapse" data-accordion="open" class="w-full">
+                <div class="w-full accordion-container">
+                    <h2 id="accordion-collapse-heading-1" class="accordion">
+                        <button type="button" id="accordion-button-1" class="accordion-button-custom"
+                            data-accordion-target="#accordion-collapse-body-1" aria-expanded="false"
+                            aria-controls="accordion-collapse-body-1">
+                            <span class="accordion-title footer-title">Company</span>
+                            <span class="icon " aria-hidden="true">
+                            </span>
+                        </button>
+                    </h2>
+                    <div id="accordion-collapse-body-1"
+                        class="accordion-content footer-title flex flex-col w-full gap-[20px] hidden"
+                        aria-labelledby="accordion-collapse-heading-1">
+                        <a href="#" class="footer-text">
+                            Blog
+                        </a>
+                        <a href="#" class="footer-text">
+                            News
+                        </a>
+                        <a href="#" class="footer-text">
+                            Careers
+                        </a>
+                        <a href="#" class="footer-text">
+                            Contact Us
+                        </a>
+                        <a href="#" class="footer-text">
+                            Case studies
+                        </a>
+                        <a href="#" class="footer-text mb-[16px]">
+                            Our patners
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full accordion-container">
+                    <h2 id="accordion-collapse-heading-2" class="accordion w-full">
+                        <button type="button" id="accordion-button-2" class="accordion-button-custom"
+                            data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
+                            aria-controls="accordion-collapse-body-2">
+                            <span class="accordion-title footer-title">Industries</span>
+                            <span class="icon " aria-hidden="true">
+                            </span>
+                        </button>
+                    </h2>
+                    <div id="accordion-collapse-body-2"
+                        class="accordion-content footer-title flex flex-col w-full gap-[20px] hidden"
+                        aria-labelledby="accordion-collapse-heading-2">
+                        <a href="#" class="footer-text">
+                            Retail
+                        </a>
+                        <a href="#" class="footer-text">
+                            Healthcare
+                        </a>
+                        <a href="#" class="footer-text mb-[16px]">
+                            Education
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full accordion-container">
+                    <h2 id="accordion-collapse-heading-3" class="accordion w-full">
+                        <button type="button" id="accordion-button-3" class="accordion-button-custom"
+                            data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
+                            aria-controls="accordion-collapse-body-3">
+                            <span class="accordion-title footer-title">Service</span>
+                            <span class="icon " aria-hidden="true">
+                            </span>
+                        </button>
+                    </h2>
+                    <div id="accordion-collapse-body-3"
+                        class="accordion-content footer-title flex flex-col w-full gap-[20px] hidden"
+                        aria-labelledby="accordion-collapse-heading-3">
+                        <a href="#" class="footer-text">
+                            Consulting
+                        </a>
+                        <a href="#" class="footer-text">
+                            Outstaffing
+                        </a>
+                        <a href="#" class="footer-text">
+                            Develop Enterprise System
+                        </a>
+                        <a href="#" class="footer-text">
+                            Develop Website
+                        </a>
+                        <a href="#" class="footer-text">
+                            Develop Mobile App
+                        </a>
+                        <a href="#" class="footer-text">
+                            Develop desktop App
+                        </a>
+                        <a href="#" class="footer-text">
+                            Develop IoT System
+                        </a>
+                        <a href="#" class="footer-text">
+                            SaaS Development
+                        </a>
+                        <a href="#" class="footer-text">
+                            Starup, MVP Development
+                        </a>
+                        <a href="#" class="footer-text">
+                            AI & Machine Learning
+                        </a>
+                        <a href="#" class="footer-text">
+                            Cloud Service
+                        </a>
+                        <a href="#" class="footer-text">
+                            DevOps Service
+                        </a>
+                        <a href="#" class="footer-text mb-[16px]">
+                            Support
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full accordion-container">
+                    <h2 id="accordion-collapse-heading-4" class="accordion w-full">
+                        <button type="button" id="accordion-button-4" class="accordion-button-custom"
+                            data-accordion-target="#accordion-collapse-body-4" aria-expanded="false"
+                            aria-controls="accordion-collapse-body-4">
+                            <span class="accordion-title footer-title">Expertise</span>
+                            <span class="icon " aria-hidden="true">
+                            </span>
+                        </button>
+                    </h2>
+                    <div id="accordion-collapse-body-4"
+                        class="accordion-content footer-title flex flex-col w-full gap-[20px] hidden"
+                        aria-labelledby="accordion-collapse-heading-4">
+                        <a href="#" class="footer-text">
+                            DevOps
+                        </a>
+                        <a href="#" class="footer-text">
+                            VR/AR
+                        </a>
+
+                        <a href="#" class="footer-text mb-[16px]">
+                            IoT
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w-full footer-bottom text-center">© 2023 Rabiloo. All rights reserved.</div>
+    </div>
+
+    <div class="footer lg:flex hidden flex-col justify-center items-center">
+
+        <div class="max-width w-full footer-top hide lg:flex hidden   flex-row justify-between flex-wrap gap-4">
+            <div class="footer-top-1">
+                <img src="/assets/img/logo-mini.png" alt="logo" style="padding-bottom: 38px;">
+                <div class="footer-text" style="padding-bottom: 38px;">
+                    5th Floor, Building A3, Ecolife Capitol,
+                    No. 58 To Huu Street, Me Tri Ward,
+                    Nam Tu Liem District, Hanoi, Vietnam
+                </div>
+
+                <div class="footer-text" style="padding-bottom: 36px;">
+                    (+84)90-1134-886
+                </div>
+                <div class="footer-text flex flex-row gap-2">
+                    <div class="">Theo dõi chúng tôi</div>
+                    <div class="footer-logos flex flex-row gap-3">
+                        <a href="" class="">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="12" fill="#D9D9D9" />
+                                <path
+                                    d="M14.722 7.32458H16V5.09858C15.7795 5.06825 15.0212 5 14.1382 5C12.2956 5 11.0333 6.15908 11.0333 8.28942V10.25H9V12.7385H11.0333V19H13.5263V12.7391H15.4774L15.7871 10.2506H13.5257V8.53617C13.5263 7.81692 13.7199 7.32458 14.722 7.32458Z"
+                                    fill="#003BBA" />
+                            </svg>
+                        </a>
+                        <a href="" class="">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="12" fill="#D9D9D9" />
+                                <path
+                                    d="M18 8.27925C17.5538 8.475 17.0782 8.60475 16.5825 8.66775C17.0925 8.36325 17.4818 7.88475 17.6648 7.308C17.1892 7.5915 16.6642 7.79175 16.1047 7.9035C15.6532 7.42275 15.0097 7.125 14.3077 7.125C12.9457 7.125 11.8492 8.2305 11.8492 9.58575C11.8492 9.78075 11.8657 9.96825 11.9062 10.1467C9.861 10.047 8.05125 9.06675 6.8355 7.5735C6.62325 7.94175 6.49875 8.36325 6.49875 8.817C6.49875 9.669 6.9375 10.4242 7.5915 10.8615C7.19625 10.854 6.8085 10.7392 6.48 10.5585C6.48 10.566 6.48 10.5757 6.48 10.5855C6.48 11.781 7.33275 12.774 8.451 13.0027C8.25075 13.0575 8.0325 13.0837 7.806 13.0837C7.6485 13.0837 7.4895 13.0747 7.34025 13.0417C7.659 14.016 8.5635 14.7322 9.639 14.7555C8.802 15.4102 7.73925 15.8048 6.58875 15.8048C6.387 15.8048 6.1935 15.7957 6 15.771C7.08975 16.4738 8.38125 16.875 9.774 16.875C14.301 16.875 16.776 13.125 16.776 9.8745C16.776 9.76575 16.7723 9.66075 16.767 9.5565C17.2552 9.21 17.6655 8.77725 18 8.27925Z"
+                                    fill="#003BBA" />
+                            </svg>
+                        </a>
+                        <a href="" class="">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="12" fill="#D9D9D9" />
+                                <path
+                                    d="M18.9971 17.5001V17.4996H19.0001V13.0986C19.0001 10.9456 18.5366 9.28711 16.0196 9.28711C14.8096 9.28711 13.9976 9.95111 13.6661 10.5806H13.6311V9.48811H11.2446V17.4996H13.7296V13.5326C13.7296 12.4881 13.9276 11.4781 15.2211 11.4781C16.4956 11.4781 16.5146 12.6701 16.5146 13.5996V17.5001H18.9971Z"
+                                    fill="#003BBA" />
+                                <path d="M7.19824 9.48853H9.68624V17.5H7.19824V9.48853Z" fill="#003BBA" />
+                                <path
+                                    d="M8.441 5.5C7.6455 5.5 7 6.1455 7 6.941C7 7.7365 7.6455 8.3955 8.441 8.3955C9.2365 8.3955 9.882 7.7365 9.882 6.941C9.8815 6.1455 9.236 5.5 8.441 5.5V5.5Z"
+                                    fill="#003BBA" />
+                            </svg>
+
+                        </a>
+                        <a href="" class="">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="12" fill="#D9D9D9" />
+                                <path
+                                    d="M18.8605 9.15773C18.8605 9.15773 18.7238 8.17745 18.3027 7.74701C17.7695 7.18051 17.1734 7.17773 16.9 7.1444C14.9422 7 12.0027 7 12.0027 7H11.9973C11.9973 7 9.05781 7 7.1 7.1444C6.82656 7.17773 6.23047 7.18051 5.69727 7.74701C5.27617 8.17745 5.14219 9.15773 5.14219 9.15773C5.14219 9.15773 5 10.3102 5 11.4599V12.5374C5 13.687 5.13945 14.8395 5.13945 14.8395C5.13945 14.8395 5.27617 15.8198 5.69453 16.2502C6.22773 16.8167 6.92773 16.7973 7.23945 16.8584C8.36055 16.9667 12 17 12 17C12 17 14.9422 16.9944 16.9 16.8528C17.1734 16.8195 17.7695 16.8167 18.3027 16.2502C18.7238 15.8198 18.8605 14.8395 18.8605 14.8395C18.8605 14.8395 19 13.6898 19 12.5374V11.4599C19 10.3102 18.8605 9.15773 18.8605 9.15773ZM10.5535 13.8453V9.84921L14.3352 11.8542L10.5535 13.8453Z"
+                                    fill="#003BBA" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-top-1  flex flex-col w-fit" style="gap:48px">
+                <div class="flex flex-col w-fit" style="gap:14px">
+                    <div class="footer-title" style="padding-bottom:6px">
+                        Company
+                    </div>
+                    <a href="#" class="footer-text">
+                        Blog
+                    </a>
+                    <a href="#" class="footer-text">
+                        News
+                    </a>
+                    <a href="#" class="footer-text">
+                        Careers
+                    </a>
+                    <a href="#" class="footer-text">
+                        Contact Us
+                    </a>
+                    <a href="#" class="footer-text">
+                        Case studies
+                    </a>
+                    <a href="#" class="footer-text">
+                        Our patners
+                    </a>
+                </div>
+                <div class="flex flex-col w-fit" style="gap:14px">
+                    <div class="footer-title" style="padding-bottom:6px">
+                        Industries
+                    </div>
+                    <a href="#" class="footer-text">
+                        Retail
+                    </a>
+                    <a href="#" class="footer-text">
+                        Healthcare
+                    </a>
+                    <a href="#" class="footer-text">
+                        Education
+                    </a>
+                </div>
+
+            </div>
+            <div class="footer-top-1  flex flex-col w-fit">
+                <div class="flex flex-col w-fit" style="gap:14px">
+                    <div class="footer-title" style="padding-bottom:6px">
+                        Service
+                    </div>
+                    <a href="#" class="footer-text">
+                        Consulting
+                    </a>
+                    <a href="#" class="footer-text">
+                        Outstaffing
+                    </a>
+                    <a href="#" class="footer-text">
+                        Develop Enterprise System
+                    </a>
+                    <a href="#" class="footer-text">
+                        Develop Website
+                    </a>
+                    <a href="#" class="footer-text">
+                        Develop Mobile App
+                    </a>
+                    <a href="#" class="footer-text">
+                        Develop desktop App
+                    </a>
+                    <a href="#" class="footer-text">
+                        Develop IoT System
+                    </a>
+                    <a href="#" class="footer-text">
+                        SaaS Development
+                    </a>
+                    <a href="#" class="footer-text">
+                        Starup, MVP Development
+                    </a>
+                    <a href="#" class="footer-text">
+                        AI & Machine Learning
+                    </a>
+                    <a href="#" class="footer-text">
+                        Cloud Service
+                    </a>
+                    <a href="#" class="footer-text">
+                        DevOps Service
+                    </a>
+                    <a href="#" class="footer-text">
+                        Support
+                    </a>
+
+                </div>
+            </div>
+            <div class="footer-top-1  flex flex-col w-fit">
+                <div class="flex flex-col w-fit" style="gap:14px">
+                    <div class="footer-title" style="padding-bottom:6px">
+                        Expertise
+                    </div>
+                    <a href="#" class="footer-text">
+                        DevOps
+                    </a>
+                    <a href="#" class="footer-text">
+                        VR/AR
+                    </a>
+                    <a href="#" class="footer-text">
+                        IoT
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full footer-bottom text-center">© 2023 Rabiloo. All rights reserved.</div>
+    </div>
+
+
+
+
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/toggle-menu.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+</body>
+
+</html>
