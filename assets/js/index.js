@@ -32,7 +32,7 @@ $(function () {
   $(window).scroll(function () {
     let scroll = $(window).scrollTop();
 
-    if (scroll >= 200) {
+    if (scroll >= 100) {
 
       header.removeClass('header-top').addClass("header-top-alt");
       contact.addClass('button-v1');
@@ -117,7 +117,7 @@ $(document).ready(function () {
 
   interval = setInterval(changeMolecule, intervalTime);
 
-  selectList.on('click', 'li', function () {
+  selectList.on('mouseenter', 'li', function () {
     clearInterval(interval);
     $(this).addClass('select-box-selected').siblings().removeClass('select-box-selected');
     index = $(this).index();
@@ -126,3 +126,50 @@ $(document).ready(function () {
 
   });
 });
+
+
+(document).ready(function () {
+  $('.menu-item').click(function () {
+    $('.menu-item').removeClass('menu-item-selected');
+    $(this).addClass('menu-item-selected');
+  });
+});
+
+
+// accordion
+
+const items = document.querySelectorAll(".accordion button");
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('color', 'white');
+  }
+
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+
+
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()

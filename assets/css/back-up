@@ -1,0 +1,319 @@
+@media only screen and (max-width: 480px) {
+    .max-width {
+        max-width: 339px;
+    }
+
+    .max-width-1 {
+        max-width: 335px;
+    }
+
+    .max-width-2 {
+        max-width: 100%;
+    }
+
+    .max-width-3 {
+        max-width: 335px;
+    }
+
+    .rabiloo-logo {
+        width: 100px;
+    }
+
+    .header-top {
+        color: #FFFFFF;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        height: 56px;
+        line-height: 100%;
+        transition: all 0.5s;
+    }
+
+    .header-top-alt {
+        background: #FFFFFF;
+        color: #454545;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        height: 56px;
+        line-height: 100%;
+        transition: all 0.5s;
+    }
+
+    .header-contact {
+        padding: 8px;
+    }
+
+    .open-container {
+        padding-left: 29px;
+    }
+
+    .header-title {
+        text-transform: none;
+        max-width: 339px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .header-content {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 24px;
+        max-width: 339px;
+    }
+
+    .content-box-center {
+        height: 50px;
+        width: 50px;
+        background-color: #F9F9F9;
+        border-radius: 16px;
+    }
+
+    .content-box-center:hover {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-trusted {
+        height: 54px;
+    }
+
+    .trusted {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+
+    /* body */
+
+    .content-box-left {
+        font-size: 20px;
+        line-height: 28px;
+
+    }
+
+    .content-box-right {
+        width: 100%;
+        gap: 16px;
+    }
+
+    .content-box-center {
+        height: 148px;
+        width: calc(50% - 8px);
+        border-radius: 16px;
+    }
+
+    .cbc-text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        width: 109px;
+        text-align: center;
+    }
+
+    .content-box {
+        padding: 64px 0px;
+    }
+
+    .content-center-top {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .content-box-1 {
+        gap: 36px;
+        padding: 64px 0 74px;
+    }
+
+    .cct-center {
+        padding-top: 4px;
+    }
+
+    .cct-center-bottom {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .cct-right {
+        padding-top: 4px;
+    }
+
+    .content-title {
+
+        font-size: 20px;
+        line-height: 28px;
+        padding-bottom: 32px;
+    }
+
+    .card {
+        width: 100%;
+        border-radius: 16px;
+    }
+
+    .card-title {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .card-content {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+
+
+    .title-content {
+        max-width: 335px;
+        width: 100%;
+    }
+
+    .carousel-control-prev {
+        position: absolute;
+        left: -10px;
+    }
+
+    .carousel-control-next {
+        position: absolute;
+        right: -10px;
+    }
+
+    #carouselExampleIndicators {
+        max-width: 335px;
+        width: 100%;
+    }
+
+    .carousel-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 60px;
+    }
+
+    .content-box-2 {
+        padding-left: 0;
+        /* height: 100%;    
+        justify-content: center; */
+    }
+
+    .carousel-header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .filter-content {
+        min-height: 656px;
+
+    }
+
+    .cerf-wrapper {
+        padding: 0 0 64px;
+    }
+
+    .cerf-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 335px;
+        gap: 15px;
+    }
+
+    .certificate {
+        width: 160px;
+        height: 124.57px;
+        z-index: -1;
+    }
+
+    .cerf-bg {
+        position: absolute;
+        width: 160px;
+        height: 96px;
+        border-radius: 16px;
+        background-color: #F9F9F9;
+        z-index: 0;
+    }
+
+    .cerf {
+        height: 98px;
+        width: 98px;
+        bottom: -29px;
+    }
+
+    .name {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .position {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .quote {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .form-input {
+        width: 100vw;
+        max-width: 375px;
+        padding: 32px 32px 35px;
+    }
+
+    .form-title {
+        font-size: 20px;
+        line-height: 28px;
+        text-transform: none;
+    }
+
+    label.block {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    input.input {
+        height: 40px;
+        padding: 11px 12px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .form-wrapper {
+        width: 100%;
+    }
+
+    .form {
+        padding: 0;
+    }
+
+    .footer-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+
+
+    .pd-bottom-2 {
+        padding-bottom: 28px;
+    }
+
+    span.footer-title {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .footer-bottom {
+        padding-top: 18px;
+        padding-bottom: 12px;
+    }
+
+    .tc-title {
+        text-transform: none;
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
